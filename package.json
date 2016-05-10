@@ -1,0 +1,32 @@
+{
+  "name": "NCCC",
+  "version": "0.0.1",
+  "description": "A ministry of restoration",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/randseay/nccc.git"
+  },
+  "keywords": [
+    "northlandccc",
+    "nccc"
+  ],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/randseay/nccc"
+  },
+  "homepage": "http://northlandccc.com",
+  "devDependencies": {
+    "browser-sync": "^2.12.7",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.0",
+    "gulp-newer": "^1.1.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7"
+  }
+}

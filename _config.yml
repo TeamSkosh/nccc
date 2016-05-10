@@ -1,0 +1,28 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Northland Christian Counseling Center
+description: > # this means to ignore newlines until "baseurl:"
+  The Purpose of Northland Christian Counseling Center (NCCC) is to offer a
+  ministry which aids in the development of each individual's potential:
+      emotionally, physically, socially, intellectually, and spiritually.
+      This endeavor includes counseling and educational services based on the
+      Word of God.
+phone1: 877.795.6222
+phone2: 701.795.8550
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://northlandccc.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+# Excludes
+exclude:
+  - package.json
+  - node_modules
+  - gulpfile.js
