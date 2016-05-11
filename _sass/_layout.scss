@@ -1,8 +1,12 @@
 /*------------------------------------------------------------------------------
     _layout.scss
 
-    Site layout styles and component imports
+    Component and page style imports
 ------------------------------------------------------------------------------*/
 
+// Components
 @import "components/header";
 @import "components/nav";
+
+// Pages
+@import "pages/home";

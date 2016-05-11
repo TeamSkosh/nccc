@@ -11,12 +11,11 @@
     list-style: none;
     margin: 0 auto;
     max-width: $width--nav;
-    padding: 0 $padding--content;
 
     &--item {
         border-top: 5px solid $color--white;
         text-align: center;
-        width: 33%;
+        width: percentage(1/3);
 
         &:hover {
             border-top: 5px solid $color--secondary;
@@ -24,6 +23,8 @@
 
         a {
             display: block;
+            font-weight: 100;
+            padding-bottom: 5px;
         }
     }
 }

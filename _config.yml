@@ -8,11 +8,11 @@
 # Site settings
 title: Northland Christian Counseling Center
 description: > # this means to ignore newlines until "baseurl:"
-  The Purpose of Northland Christian Counseling Center (NCCC) is to offer a
-  ministry which aids in the development of each individual's potential:
-      emotionally, physically, socially, intellectually, and spiritually.
-      This endeavor includes counseling and educational services based on the
-      Word of God.
+    The Purpose of Northland Christian Counseling Center is to offer a
+    ministry which aids in the development of each individual's potential:
+    emotionally, physically, socially, intellectually, and spiritually.
+    This endeavor includes counseling and educational services based on the
+    Word of God.
 phone1: 877.795.6222
 phone2: 701.795.8550
 baseurl: "" # the subpath of your site, e.g. /blog
