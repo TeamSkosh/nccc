@@ -45,7 +45,21 @@ $color--quaternary: #F5D5A1;
  * Spacing
  */
 $spacing--unit: ms(3);
-$content--width: 1000px;
+
+/**
+ * Padding
+ */
+$padding--content: $spacing--unit / 2;
+
+/**
+ * Widths
+ */
+$width--content: 1000px;
+$width--nav: 500px;
+
+/**
+ * Borders
+ */
 $border--radius: ms(2);
 
 /**

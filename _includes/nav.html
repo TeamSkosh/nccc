@@ -1,5 +1,17 @@
-<nav>
-    <li><a href="{{ "/" | prepend: site.baseurl }}"></a>Home</li>
-    <li><a href="{{ "/meet-us/" | prepend: site.baseurl }}">Meet Us</a></li>
-    <li><a href="{{ "/donate/" | prepend: site.baseurl }}">Donate</a></li>
+<nav class="site-nav">
+    <li class="site-nav--item">
+        <a href="{{ site.baseurl }}/">
+            Home
+        </a>
+    </li>
+    {% assign sorted_pages = site.pages | sort: 'nav_order' %}
+    {% for my_page in sorted_pages %}
+        {% if my_page.title %}
+            <li class="site-nav--item">
+                <a href="{{ my_page.url | prepend: site.baseurl }}">
+                    {{ my_page.title }}
+                </a>
+            </li>
+        {% endif %}
+    {% endfor %}
 </nav>
