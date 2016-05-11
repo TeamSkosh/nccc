@@ -1,0 +1,15 @@
+/*------------------------------------------------------------------------------
+    _functions.scss
+
+    Useful functions and mixins
+------------------------------------------------------------------------------*/
+
+@function ms($index: 2, $scale-list: $modular-scale) {
+    @return nth($modular-scale, $index);
+}
+
+@mixin mq($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}

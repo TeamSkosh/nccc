@@ -1,0 +1,56 @@
+/*------------------------------------------------------------------------------
+    _variables.scss
+
+    Project variables
+------------------------------------------------------------------------------*/
+
+/**
+ * Typography
+ */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,700,100italic,400italic,700italic);
+
+$font--main: Roboto, sans-serif;
+$font--weight: 100;
+$font--line-height: 1.5;
+
+/**
+ * Modular Scale
+ */
+$modular-scale: (1rem);
+@for $i from 1 through 6 {
+    $modular-scale: append($modular-scale, nth($modular-scale, $i) * 1.618034);
+}
+
+/**
+ * Colors
+ */
+// Basic
+$color--white: #FFFFFF;
+$color--black: #000000;
+$color--gray: #808080;
+$color--gray__light: lighten($color--gray, 15%);
+$color--gray__lighter: lighten($color--gray, 30%);
+$color--gray__dark: darken($color--gray, 15%);
+$color--gray__darker: darken($color--gray, 30%);
+
+// Brand
+$color--primary: #EEA720;
+$color--primary__interact: darken($color--primary, 15%);
+$color--secondary: #995D35;
+$color--secondary__interact: darken($color--secondary, 15%);
+$color--tertiary: #2E1800;
+$color--quaternary: #F5D5A1;
+
+/**
+ * Spacing
+ */
+$spacing--unit: ms(3);
+$content--width: 1000px;
+$border--radius: ms(2);
+
+/**
+ * Page Variables
+ */
+ // Header
+$color--overlay__bg: rgba(255,255,255,0.75);
+$color--overlay__logo: rgba(255,255,255,0.5);

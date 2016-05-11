@@ -1,0 +1,39 @@
+/*------------------------------------------------------------------------------
+    _header.scss
+
+    Header styles
+------------------------------------------------------------------------------*/
+
+.site-header {
+    align-items: center;
+    background: linear-gradient($color--overlay__bg, $color--overlay__bg);
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    position: relative;
+
+    &:before {
+        background: url("../../img/wheat.jpeg");
+        background-color: $color--white;
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        bottom: 0;
+        content: ' ';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    &--logo {
+        background: $color--overlay__logo;
+        border-radius: $border--radius;
+        padding: $spacing--unit;
+    }
+}

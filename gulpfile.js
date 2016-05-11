@@ -53,12 +53,13 @@ gulp.task('jekyll', () => {
 
 gulp.task('scss', () => {
     gulp.src(paths.src.scss)
+        .pipe(maps.init())
         .pipe(scss({
             outputStyle: 'expanded'
         })
         .on('error', scss.logError))
         .pipe(concat('main.min.css'))
-        .pipe(maps.write('./'))
+        .pipe(maps.write())
         .pipe(gulp.dest(paths.src.css));
 });
 
