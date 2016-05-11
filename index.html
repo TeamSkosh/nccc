@@ -2,16 +2,30 @@
 layout: default
 ---
 
-<section class="home-summary">
+<section class="home--summary">
     <div class="wrapper">
-        <p>{{ site.description }}</p>
-        <p>
-            Northland Christian Counseling Center believes that God, through the
-            Lord Jesus Christ, has all power to guide and carry people through the
-            hurt, uncertainty, and pain of their lives. In the process of counseling
-            and within the context of a caring community of believers, each
-            individual client is offered healing, restoration, strength, love and
-            comfort.
-        </p>
+        <h1 class="home--tagline">A Ministry of Restoration</h1>
+
+        <hr class="home--rule">
+
+        <div class="home--description">
+            <div class="home--description-image">
+                <img
+                    src="{{ "/img/piggy-back.jpg" | prepend: site.baseurl }}"
+                    alt="Piggy Back Ride">
+            </div>
+
+            <div class="home--description-text">
+                <p>{{ site.description }}</p>
+                <p>
+                    Northland Christian Counseling Center believes that God, through the
+                    Lord Jesus Christ, has all power to guide and carry people through the
+                    hurt, uncertainty, and pain of their lives. In the process of counseling
+                    and within the context of a caring community of believers, each
+                    individual client is offered healing, restoration, strength, love and
+                    comfort.
+                </p>
+            </div>
+        </div>
     </div>
 </section>

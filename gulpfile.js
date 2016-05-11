@@ -25,13 +25,11 @@ gulp.task('default', ['scss', 'images', 'jekyll', 'serve']);
 gulp.task('images', () => {
     return gulp.src('_img/*')
     .pipe(newer(paths.dist.img))
-    .pipe(imagemin([
-        imagemin.gifsicle({interlaced: true}),
-        imagemin.mozjpeg({progressive: true}),
-        imagemin.optipng(),
-        imagemin.svgo({plugins: [{removeViewBox: false}]})
-    ]))
-    .pipe(gulp.dest('img'));
+    .pipe(imagemin()
+    .on('error', e => {
+        gutil.log('Imagemin Error: ' + e)
+    }))
+    .pipe(gulp.dest(paths.dist.img));
 });
 
 gulp.task('jekyll', () => {
