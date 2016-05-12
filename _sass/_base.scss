@@ -9,7 +9,7 @@
  */
 body {
     font-family: $font--main;
-    font-size: ms(3);
+    font-size: ms(2) * 1.25;
     font-weight: $font--weight;
     color: $color--black;
     -webkit-text-size-adjust: 100%;
@@ -18,7 +18,7 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
-    line-height: 1.5;
+    line-height: $font--line-height;
 }
 
 /**

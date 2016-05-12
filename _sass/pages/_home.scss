@@ -8,26 +8,34 @@
     &--summary {
         background: $color--secondary;
         color: $color--white;
-        font-size: ms(2);
-        padding: $spacing--unit $padding--content;
+        padding: ($spacing--unit * 2) $padding--content;
     }
     &--tagline {
         font-size: ms(4);
         font-weight: 100;
+        text-align: center;
     }
 
     &--rule {
         border-bottom: 1px solid $color--primary;
-        margin-bottom: $spacing--unit;
+        margin: 0 auto $spacing--unit;
+        max-width: 200px;
     }
 
     &--description {
         display: flex;
+        align-items: center;
     }
 
     &--description-image {
+        border: 1px solid $color--primary;
+        border-radius: 50%;
+        margin-right: $spacing--unit;
+        padding: $spacing--unit / 2;
+
         img {
             border-radius: 50%;
+            max-width: 250px;
         }
     }
 }

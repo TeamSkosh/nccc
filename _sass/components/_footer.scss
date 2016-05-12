@@ -1,0 +1,22 @@
+/*------------------------------------------------------------------------------
+    _footer.scss
+
+    Footer styles.
+------------------------------------------------------------------------------*/
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: $width--content;
+
+    &--wrapper {
+        border-top: 1px solid $color--primary;
+        margin: $spacing--unit / 2;
+        padding-top: $spacing--unit;
+    }
+
+    &--address {
+
+    }
+}
