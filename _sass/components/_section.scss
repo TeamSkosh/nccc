@@ -1,0 +1,40 @@
+/*------------------------------------------------------------------------------
+    _section.scss
+
+    Section styles used across pages
+------------------------------------------------------------------------------*/
+
+.section {
+    &--title {
+        font-size: ms(4);
+        font-weight: 100;
+        text-align: center;
+    }
+
+    &--rule {
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        margin: 0 auto $spacing--unit;
+        max-width: 200px;
+
+        &__primary {
+            @extend .section--rule;
+            border-bottom-color: $color--primary;
+        }
+
+        &__secondary {
+            @extend .section--rule;
+            border-bottom-color: $color--secondary;
+        }
+
+        &__tertiary {
+            @extend .section--rule;
+            border-bottom-color: $color--tertiary;
+        }
+
+        &__quaternary {
+            @extend .section--rule;
+            border-bottom-color: $color--quaternary;
+        }
+    }
+}

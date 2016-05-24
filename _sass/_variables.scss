@@ -42,6 +42,17 @@ $color--tertiary: #2E1800;
 $color--quaternary: #F5D5A1;
 
 /**
+ * Responsive Breakpoints
+ * (lower bounds, mobile first)
+ */
+ $media--xsmall: 320px;
+ $media--small: 480px;
+ $media--medium: 640px;
+ $media--large: 960px;
+ $media--xlarge: 1280px;
+ $media--xxlarge: 1500px;
+
+/**
  * Spacing
  */
 $spacing--unit: ms(3);

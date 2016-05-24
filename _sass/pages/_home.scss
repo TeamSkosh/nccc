@@ -10,17 +10,6 @@
         color: $color--white;
         padding: ($spacing--unit * 2) $padding--content;
     }
-    &--tagline {
-        font-size: ms(4);
-        font-weight: 100;
-        text-align: center;
-    }
-
-    &--rule {
-        border-bottom: 1px solid $color--primary;
-        margin: 0 auto $spacing--unit;
-        max-width: 200px;
-    }
 
     &--description {
         display: flex;
@@ -37,5 +26,33 @@
             border-radius: 50%;
             max-width: 250px;
         }
+    }
+
+    &--overview {
+        padding: ($spacing--unit * 2) $padding--content;
+    }
+
+    &--overview-points {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    &--overview-point {
+        flex: 1 0 100%;
+        text-align: center;
+
+        @include mq--medium {
+            flex: 1 0 50%;
+        }
+
+        @include mq--large {
+            flex: 1 0 percentage(1/3);
+        }
+    }
+
+    &--overview-point-title {
+        color: $color--secondary;
+        font-weight: 400;
+        padding: $spacing--unit / 2;
     }
 }

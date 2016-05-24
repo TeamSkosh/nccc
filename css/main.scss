@@ -12,6 +12,7 @@
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import"functions";
 @import "variables";
+@import "mixins";
 @import "reset";
 @import "base";
 @import "layout";

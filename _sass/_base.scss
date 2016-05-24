@@ -50,13 +50,6 @@ figcaption {
     font-size: ms(2);
 }
 
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing--unit;
-}
-
 li {
     > ul,
     > ol {

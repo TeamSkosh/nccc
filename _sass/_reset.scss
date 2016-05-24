@@ -15,7 +15,7 @@ html {
 
 // Other Basic Resets
 body, h1, h2, h3, h4, h5, h6,
-p, blockquote, hr, figure {
+p, blockquote, hr, figure, ul {
     margin: 0;
     padding: 0;
 }
@@ -31,6 +31,10 @@ a {
 
 hr {
     border-top: none;
+}
+
+ul {
+    list-style: none;
 }
 
 // Forms

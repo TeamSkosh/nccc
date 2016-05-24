@@ -1,0 +1,41 @@
+/*------------------------------------------------------------------------------
+    _mixins.scss
+
+    Useful mixins for the project
+------------------------------------------------------------------------------*/
+
+/**
+ * Media Query
+ */
+@mixin mq($media-size, $media: "screen") {
+    @media screen and (min-width: #{$media-size}) {
+        @content;
+    }
+}
+
+/**
+ * Specific Media Queries
+ */
+@mixin mq--xsmall {
+    @include mq($media--xsmall) {@content;};
+}
+
+@mixin mq--small {
+    @include mq($media--small) {@content;};
+}
+
+@mixin mq--medium {
+    @include mq($media--medium) {@content;};
+}
+
+@mixin mq--large {
+    @include mq($media--large) {@content;};
+}
+
+@mixin mq--xlarge {
+    @include mq($media--xlarge) {@content;};
+}
+
+@mixin mq--xxlarge {
+    @include mq($media--xxlarge) {@content;};
+}
