@@ -39,14 +39,12 @@
 
     &--overview-point {
         flex: 1 0 100%;
+        font-size: ms(2) * 1.125;
+        padding: $spacing--unit / 2;
         text-align: center;
 
-        @include mq--medium {
-            flex: 1 0 50%;
-        }
-
         @include mq--large {
-            flex: 1 0 percentage(1/3);
+            flex: 1 0 50%;
         }
     }
 

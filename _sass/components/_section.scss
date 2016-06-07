@@ -36,5 +36,15 @@
             @extend .section--rule;
             border-bottom-color: $color--quaternary;
         }
+
+        &__white {
+            @extend .section--rule;
+            border-bottom-color: $color--white;
+        }
+
+        &__black{
+            @extend .section--rule;
+            border-bottom-color: $color--black;
+        }
     }
 }

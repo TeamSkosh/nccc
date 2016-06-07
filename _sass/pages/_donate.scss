@@ -1,0 +1,17 @@
+/*------------------------------------------------------------------------------
+    _donate.scss
+
+    Donate page styles
+------------------------------------------------------------------------------*/
+
+.donate {
+    &--summary {
+        background: $color--tertiary;
+        color: $color--white;
+        padding: ($spacing--unit * 2) $padding--content;
+    }
+
+    &--resources {
+        padding: ($spacing--unit * 2) $padding--content;
+    }
+}

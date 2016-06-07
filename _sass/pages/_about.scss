@@ -1,0 +1,13 @@
+/*------------------------------------------------------------------------------
+    _about.scss
+
+    About Us page styles
+------------------------------------------------------------------------------*/
+
+.about {
+    &--summary {
+        background: $color--quaternary;
+        color: $color--secondary;
+        padding: ($spacing--unit * 2) $padding--content;
+    }
+}
