@@ -15,7 +15,7 @@ description: > # this means to ignore newlines until "baseurl:"
     Word of God.
 phone1: 877.795.6222
 phone2: 701.795.8550
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/nccc" # the subpath of your site, e.g. /blog
 url: "http://northlandccc.com" # the base hostname & protocol for your site
 
 # Build settings
