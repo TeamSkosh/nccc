@@ -10,7 +10,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,700,100italic,400italic,700italic);
 
 $font--main: Roboto, sans-serif;
-$font--weight: 100;
+$font--weight: 400;
 $font--line-height: 1.5;
 
 /**
@@ -26,12 +26,16 @@ $modular-scale: (1rem);
  */
 // Basic
 $color--white: #FFFFFF;
+$color--white__off: #EFEFEF;
 $color--black: #000000;
+$color--black__off: #AAAAAA;
 $color--gray: #808080;
 $color--gray__light: lighten($color--gray, 15%);
 $color--gray__lighter: lighten($color--gray, 30%);
+$color--gray__lightest: lighten($color--gray, 40%);
 $color--gray__dark: darken($color--gray, 15%);
 $color--gray__darker: darken($color--gray, 30%);
+$color--gray__darkest: darken($color--gray, 40%);
 
 // Brand
 $color--primary: #EEA720;

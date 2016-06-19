@@ -23,7 +23,7 @@ const paths = {
 gulp.task('default', ['scss', 'images', 'jekyll', 'serve']);
 
 gulp.task('images', () => {
-    return gulp.src('_img/*')
+    return gulp.src('_img/**/*')
     .pipe(newer(paths.dist.img))
     .pipe(imagemin()
     .on('error', e => {
