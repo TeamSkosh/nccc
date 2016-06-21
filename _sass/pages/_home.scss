@@ -11,20 +11,42 @@
         padding: ($spacing--unit * 2) $padding--content;
     }
 
+    &--summary-rule {
+        display: none;
+        @extend .section--rule__primary;
+
+        @include mq--large {
+            display: block;
+        }
+    }
+
     &--description {
         display: flex;
+        flex-direction: column;
         align-items: center;
+
+        @include mq--large {
+            flex-direction: row;
+        }
     }
 
     &--description-image {
         border: 1px solid $color--primary;
         border-radius: 50%;
-        margin-right: $spacing--unit;
+        margin-bottom: $spacing--unit;
         padding: $spacing--unit / 2;
+
+        @include mq--large {
+            margin-right: $spacing--unit;
+        }
 
         img {
             border-radius: 50%;
-            max-width: 250px;
+            max-width: 200px;
+
+            @include mq--small {
+                max-width: 250px;
+            }
         }
     }
 
@@ -35,22 +57,55 @@
     &--overview-points {
         display: flex;
         flex-flow: row wrap;
+        margin-top: $spacing--unit * 2;
     }
 
     &--overview-point {
+        align-items: center;
+        border-radius: $border--radius;
+        display: flex;
         flex: 1 0 100%;
+        flex-direction: column;
         font-size: ms(2) * 1.125;
-        padding: $spacing--unit / 2;
-        text-align: center;
+        margin-bottom: $spacing--unit;
+        padding: $spacing--unit ($spacing--unit / 2);
 
-        @include mq--large {
-            flex: 1 0 50%;
+
+        @include mq--medium {
+            flex-direction: row;
+            padding-bottom: $spacing--unit * 1.5;
+            padding-left: 0;
+            padding-right: $spacing--unit;
+            padding-top: $spacing--unit * 1.5;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(2n+1) {
+            background-color: $color--white__off;
         }
     }
 
     &--overview-point-title {
-        color: $color--secondary;
-        font-weight: 400;
-        padding: $spacing--unit / 2;
+        color: $color--primary;
+        font-weight: 700;
+        line-height: 1.15;
+        margin-bottom: 0;
+        min-width: 275px;
+        text-align: center;
+    }
+
+    &--overview-point-description {
+        font-size: ms(2);
+        margin-bottom: 0;
+        margin-top: $spacing--unit / 2;
+        text-align: center;
+
+        @include mq--medium {
+            margin-top: 0;
+            text-align: left;
+        }
     }
 }

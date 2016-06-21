@@ -35,6 +35,10 @@
     &--logo {
         background: $color--overlay__logo;
         border-radius: $border--radius;
-        padding: $spacing--unit;
+        padding: $spacing--unit / 2;
+
+        @include mq--medium {
+            padding: $spacing--unit;
+        }
     }
 }
