@@ -10,17 +10,33 @@ const scss = require('gulp-sass');
 
 const paths = {
     'dist': {
-        'img': 'img'
+        'css': 'css',
+        'img': 'img',
+        'fonts': 'fonts'
     },
     'siteRoot': '_site',
     'src': {
         'css': 'css',
         'img': '_img/**/*',
+        'fa_styles': 'node_modules/font-awesome/css/font-awesome.min.css',
+        'fa_fonts': 'node_modules/font-awesome/fonts/*',
         'scss': '_sass/**/*.scss'
     }
 };
 
-gulp.task('default', ['scss', 'images', 'jekyll', 'serve']);
+gulp.task('default', ['scss', 'images', 'fa', 'jekyll', 'serve']);
+
+gulp.task('fa', ['fa_styles', 'fa_fonts']);
+
+gulp.task('fa_styles', () => {
+    return gulp.src(paths.src.fa_styles)
+    .pipe(gulp.dest(paths.dist.css))
+});
+
+gulp.task('fa_fonts', () => {
+    return gulp.src(paths.src.fa_fonts)
+    .pipe(gulp.dest(paths.dist.fonts))
+});
 
 gulp.task('images', () => {
     return gulp.src('_img/**/*')

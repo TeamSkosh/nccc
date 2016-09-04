@@ -6,11 +6,17 @@
 
 .site-nav {
     background: $color--white;
+    border-radius: 0 0 $border--radius $border--radius;
+    box-shadow: 0 0 45px -5px rgba(95,95,95,0.9);
     display: flex;
     justify-content: space-between;
     list-style: none;
     margin: 0 auto;
-    max-width: $width--nav;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: $width--nav;
+    z-index: 1;
 
     &--item {
         border-top: 5px solid $color--white;
@@ -18,7 +24,7 @@
         width: percentage(1/3);
 
         &:hover {
-            border-top: 5px solid $color--secondary;
+            border-top: 5px solid $color--primary;
         }
 
         a {

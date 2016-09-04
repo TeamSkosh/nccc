@@ -21,6 +21,7 @@
   "homepage": "http://northlandccc.com",
   "devDependencies": {
     "browser-sync": "^2.12.7",
+    "font-awesome": "^4.6.3",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-imagemin": "^3.0.0",

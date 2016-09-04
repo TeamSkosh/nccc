@@ -8,4 +8,53 @@
     &--summary {
         padding: ($spacing--unit * 2) $padding--content;
     }
+
+    &--pull-quote {
+        color: $color--primary;
+        display: block;
+        font-size: ms(3) * 1.25;
+        font-weight: 100;
+        line-height: 1.125;
+        margin-top: $spacing--unit;
+        padding: 0 $spacing--unit;
+        position: relative;
+
+        &:before {
+            color: $color--primary;
+            content: '\201C';
+            font-family: cursive;
+            font-size: ms(5);
+            left: 0;
+            position: absolute;
+            top: -($spacing--unit);
+        }
+
+        &:after {
+            color: $color--primary;
+            content: '\201D';
+            font-size: ms(5);
+            font-family: cursive;
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    &--author {
+        color: $color--black__off;
+        font-size: ms(2);
+        text-align: center;
+    }
+
+    &--image-wrapper {
+        background: $color--white;
+        border: 1px solid $color--primary;
+        border-radius: $border--radius;
+        box-sizing: border-box;
+        margin-bottom: $spacing--unit;
+        padding: ms(2);
+    }
+
+    &--image {
+        border-radius: $border--radius / 2;
+    }
 }
