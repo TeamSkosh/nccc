@@ -86,7 +86,25 @@
         }
     }
 
+    &--staff-member-quote {
+        font-size: ms(2);
+        position: relative;
+    }
+
+    &--staff-member-quote {
+        color: $color--secondary;
+        font-size: ms(2);
+
+        .fa {
+            color: $color--primary;
+        }
+    }
+
     &--staff-member-bio {
         font-size: ms(2);
+
+        .fa {
+            color: $color--primary;
+        }
     }
 }

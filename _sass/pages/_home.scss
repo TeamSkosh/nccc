@@ -6,7 +6,12 @@
 
 .home {
     &--summary {
+        color: $color--secondary;
         padding: ($spacing--unit * 2) $padding--content;
+
+        .section--title {
+            color: $color--black;
+        }
     }
 
     &--pull-quote {
@@ -17,32 +22,6 @@
         line-height: 1.125;
         margin-top: $spacing--unit;
         padding: 0 $spacing--unit;
-        position: relative;
-
-        &:before {
-            color: $color--primary;
-            content: '\201C';
-            font-family: cursive;
-            font-size: ms(5);
-            left: 0;
-            position: absolute;
-            top: -($spacing--unit);
-        }
-
-        &:after {
-            color: $color--primary;
-            content: '\201D';
-            font-size: ms(5);
-            font-family: cursive;
-            position: absolute;
-            right: 0;
-        }
-    }
-
-    &--author {
-        color: $color--black__off;
-        font-size: ms(2);
-        text-align: center;
     }
 
     &--image-wrapper {

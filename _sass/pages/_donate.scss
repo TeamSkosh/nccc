@@ -13,5 +13,9 @@
 
     &--resources {
         padding: ($spacing--unit * 2) $padding--content;
+
+        .fa {
+            color: $color--primary;
+        }
     }
 }
