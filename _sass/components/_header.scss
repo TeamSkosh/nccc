@@ -13,6 +13,35 @@
     padding: $padding--content * 4 $padding--content $padding--content;
     position: relative;
 
+    &__small {
+        align-items: center;
+        background: linear-gradient($color--overlay__bg, $color--overlay__bg);
+        display: flex;
+        height: 250px;
+        justify-content: center;
+        padding: $padding--content * 5 $padding--content $padding--content;
+        position: relative;
+
+        &:before {
+            background: url("../../img/wheat.jpg");
+            background-color: $color--white;
+            background-attachment: fixed;
+            background-position: center center;
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            bottom: 0;
+            content: ' ';
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+        }
+    }
+
     &:before {
         background: url("../../img/wheat.jpg");
         background-color: $color--white;
@@ -36,6 +65,13 @@
         background: $color--overlay__logo;
         border-radius: $border--radius;
         padding: $spacing--unit / 2;
+
+        &__small {
+            background: $color--overlay__logo;
+            border-radius: $border--radius;
+            padding: $spacing--unit / 4;
+            max-width: 350px;
+        }
 
         @include mq--medium {
             padding: $spacing--unit;

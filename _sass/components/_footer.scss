@@ -7,14 +7,32 @@
 .site-footer {
     align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
     max-width: $width--content;
+    padding: 0 $spacing--unit;
+
+    @include mq--medium {
+        flex-direction: row;
+    }
 
     &--wrapper {
         border-top: 1px solid $color--primary;
         margin: $spacing--unit / 2;
         padding-top: $spacing--unit;
+    }
+
+    &--address {
+        text-align: center;
+
+        .fa {
+            color: $color--primary;
+        }
+
+        @include mq--medium {
+            text-align: left;
+        }
     }
 
     &--annual-report {
@@ -23,8 +41,18 @@
         font-weight: 500;
         padding: $spacing--unit / 2;
 
+        &__wrapper {
+            margin-bottom: $spacing--unit;
+        }
+
         &:hover {
             border-color: $color--primary__interact;
+        }
+    }
+
+    &--phone {
+        .fa {
+            color: $color--primary;
         }
     }
 }
