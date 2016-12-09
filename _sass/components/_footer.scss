@@ -35,21 +35,6 @@
         }
     }
 
-    &--annual-report {
-        border: 1px solid $color--primary;
-        border-radius: $border--radius;
-        font-weight: 500;
-        padding: $spacing--unit / 2;
-
-        &__wrapper {
-            margin-bottom: $spacing--unit;
-        }
-
-        &:hover {
-            border-color: $color--primary__interact;
-        }
-    }
-
     &--phone {
         .fa {
             color: $color--primary;

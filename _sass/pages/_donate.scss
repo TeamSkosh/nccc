@@ -18,4 +18,42 @@
             color: $color--primary;
         }
     }
+
+    &--files-group {
+        align-items: center;
+        border-radius: $border--radius;
+        display: flex;
+        padding: $spacing--unit;
+
+        &:nth-of-type(2n+1) {
+            background: $color--white__off;
+        }
+    }
+
+    &--files-year {
+        margin: 0 $spacing--unit 0 0;
+    }
+
+    &--file {
+        border: 1px solid $color--primary;
+        border-radius: $border--radius;
+        font-weight: 500;
+        padding: $spacing--unit / 2;
+
+        &__wrapper {
+            margin-right: $spacing--unit;
+
+            &:last-of-type {
+                margin-right: $spacing--unit;
+            }
+        }
+
+        &:hover {
+            border-color: $color--primary__interact;
+
+            .fa {
+                color: $color--primary__interact;
+            }
+        }
+    }
 }
