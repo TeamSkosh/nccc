@@ -9,6 +9,7 @@
     border-radius: 0 0 $border--radius $border--radius;
     box-shadow: 0 0 45px -5px rgba(95,95,95,0.9);
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     left: 50%;
     list-style: none;
@@ -19,16 +20,24 @@
     width: 100%;
     z-index: 1;
 
+    @include mq--medium {
+        flex-direction: row;
+    }
+
     &--item {
-        border-top: 5px solid $color--white;
+        flex-grow: 1;
         text-align: center;
-        padding: 0 $spacing--unit;
+        padding: 0;
 
         &.active {
-            border-top: 5px solid $color--secondary;
+            background: $color--white__off;
 
-            &:hover {
-                border-top: 5px solid $color--secondary;
+            &:first-of-type {
+                border-radius: 0 0 0 $border--radius;
+            }
+
+            &:last-of-type {
+                border-radius: 0 0 $border--radius 0;
             }
 
             a {
@@ -37,13 +46,25 @@
         }
 
         &:hover {
-            border-top: 5px solid $color--primary;
+            background: $color--white__off;
+
+            &:first-of-type {
+                border-radius: 0 0 0 $border--radius;
+            }
+
+            &:last-of-type {
+                border-radius: 0 0 $border--radius 0;
+            }
         }
 
         a {
             display: block;
             font-weight: 400;
-            padding: 10px 0 15px 0;
+            padding: 10px $spacing--unit 15px $spacing--unit;
+
+            &:hover {
+                color: $color--secondary;
+            }
         }
     }
 }

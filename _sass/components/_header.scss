@@ -5,22 +5,33 @@
 ------------------------------------------------------------------------------*/
 
 .site-header {
-    align-items: center;
+    align-items: flex-end;
     background: linear-gradient($color--overlay__bg, $color--overlay__bg);
     display: flex;
     height: 500px;
     justify-content: center;
-    padding: $padding--content * 4 $padding--content $padding--content;
+    padding: ($padding--content * 4) $padding--content ($padding--content * 5);
     position: relative;
 
-    &__small {
+    @include mq--medium {
         align-items: center;
+        padding-bottom: $padding--content;
+    }
+
+    &__small {
+        align-items: flex-end;
         background: linear-gradient($color--overlay__bg, $color--overlay__bg);
         display: flex;
-        height: 250px;
+        height: 400px;
         justify-content: center;
-        padding: $padding--content * 5 $padding--content $padding--content;
+        padding: ($padding--content * 5) $padding--content ($padding--content * 3);
         position: relative;
+
+        @include mq--medium {
+            align-items: center;
+            height: 250px;
+            padding-bottom: $padding--content;
+        }
 
         &:before {
             background: url("../../img/wheat.jpg");
