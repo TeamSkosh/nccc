@@ -4,8 +4,14 @@
     Header styles
 ------------------------------------------------------------------------------*/
 
+@keyframes bgFadeIn {
+    0% { background-color: rgba(255, 255, 255, 1); }
+    100% { background-color: rgba(255, 255, 255, 0); }
+}
+
 .site-header {
     align-items: flex-end;
+    animation: bgFadeIn 2s ease-in both;
     background: linear-gradient($color--overlay__bg, $color--overlay__bg);
     display: flex;
     height: 500px;
@@ -20,6 +26,7 @@
 
     &__small {
         align-items: flex-end;
+        animation: bgFadeIn 1s ease-in both;
         background: linear-gradient($color--overlay__bg, $color--overlay__bg);
         display: flex;
         height: 400px;

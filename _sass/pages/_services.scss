@@ -61,7 +61,7 @@
     }
 
     &--overview-point {
-        align-items: center;
+        align-items: flex-start;
         border-radius: $border--radius;
         display: flex;
         flex: 1 0 100%;
