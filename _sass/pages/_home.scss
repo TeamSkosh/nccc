@@ -4,6 +4,8 @@
     Home styles
 ------------------------------------------------------------------------------*/
 
+$home--call-to-action-width: 150px;
+
 .home {
     &--summary {
         color: $color--secondary;
@@ -34,5 +36,34 @@
 
     &--image {
         border-radius: $border--radius / 2;
+    }
+
+    &--call-to-action {
+        background: $color--quaternary;
+        border-radius: 50%;
+        display: inline-block;
+        height: $home--call-to-action-width;
+        margin-left: $spacing--unit / 2;
+        position: relative;
+        width: $home--call-to-action-width;
+
+        img {
+            display: block;
+            padding: $spacing--unit / 2;
+            position: absolute;
+            height: auto;
+            left: 50%;
+            max-width: $home--call-to-action-width;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: auto;
+        }
+
+        &__wrapper {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin-top: $spacing--unit;
+        }
     }
 }

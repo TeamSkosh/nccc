@@ -13,29 +13,72 @@
     max-width: $width--content;
     padding: 0 $spacing--unit;
 
-    @include mq--medium {
+    @include mq--large {
         flex-direction: row;
     }
 
     &--wrapper {
         border-top: 1px solid $color--primary;
         margin: $spacing--unit / 2;
-        padding-top: $spacing--unit;
+        padding: $spacing--unit 0;
     }
 
     &--address {
+        margin-bottom: $spacing--unit;
         text-align: center;
 
         .fa {
             color: $color--primary;
         }
 
-        @include mq--medium {
+        @include mq--large {
+            margin-bottom: 0;
             text-align: left;
         }
     }
 
+    &--file {
+        border: 1px solid $color--secondary;
+        border-radius: $border--radius;
+        color: $color--secondary;
+        font-size: ms(2);
+        font-weight: 500;
+        padding: $spacing--unit / 2;
+
+        &__wrapper {
+            margin: 0 0 $spacing--unit * 2;
+
+            @include mq--large {
+                margin: 0 $spacing--unit 0 0;
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+
+                @include mq--large {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &:hover {
+            border-color: $color--secondary__interact;
+            color: $color--secondary__interact;
+
+            .fa {
+                color: $color--secondary__interact;
+            }
+        }
+    }
+
     &--phone {
+        margin-top: $spacing--unit;
+        margin-bottom: 0;
+
+        @include mq--large {
+            margin-top: 0;
+        }
+
         .fa {
             color: $color--primary;
         }

@@ -4,11 +4,72 @@
     Donate page styles
 ------------------------------------------------------------------------------*/
 
+$donate--call-to-action-width: 150px;
+
 .donate {
     &--summary {
         background: $color--tertiary;
         color: $color--white;
         padding: ($spacing--unit * 2) $padding--content;
+    }
+
+    &--description {
+        display: flex;
+        flex-direction: column;
+
+        @include mq--large {
+            flex-direction: row;
+        }
+
+        p {
+            margin-bottom: $spacing--unit;
+
+            @include mq--large {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &--call-to-action {
+        background: $color--white;
+        border-radius: 50%;
+        display: inline-block;
+        height: $donate--call-to-action-width;
+        margin-left: $spacing--unit / 2;
+        position: relative;
+        min-width: $donate--call-to-action-width;
+
+        @include mq--large {
+            margin-left: 0;
+            margin-top: $spacing--unit / 2;
+        }
+
+        img {
+            display: block;
+            padding: $spacing--unit / 2;
+            position: absolute;
+            height: auto;
+            left: 50%;
+            max-width: $donate--call-to-action-width;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: auto;
+        }
+
+        &__wrapper {
+            align-items: center;
+            color: $color--primary;
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            justify-content: center;
+            white-space: nowrap;
+
+            @include mq--large {
+                flex-direction: column;
+                margin-left: $spacing--unit * 2;
+            }
+        }
     }
 
     &--resources {
@@ -30,7 +91,7 @@
             background: $color--white__off;
         }
 
-        @include mq--medium {
+        @include mq--large {
             flex-direction: row;
             padding: $spacing--unit;
         }
@@ -39,7 +100,7 @@
     &--files-year {
         margin: 0 0 $spacing--unit;
 
-        @include mq--medium {
+        @include mq--large {
             margin: 0 $spacing--unit 0 0;
         }
     }
@@ -53,7 +114,7 @@
         &__wrapper {
             margin: 0 0 $spacing--unit * 2;
 
-            @include mq--medium {
+            @include mq--large {
                 margin: 0 $spacing--unit 0 0;
             }
 
