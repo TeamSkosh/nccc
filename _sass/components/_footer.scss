@@ -23,6 +23,23 @@
         padding: $spacing--unit 0;
     }
 
+    &--social-links {
+        display: flex;
+        margin: ($spacing--unit * 1.5) 0 0;
+
+        @include mq--large {
+            margin: 0;
+        }
+    }
+
+    &--social-link {
+        margin-right: $spacing--unit / 2;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
     &--address {
         margin-bottom: $spacing--unit;
         text-align: center;
@@ -49,7 +66,7 @@
             margin: 0 0 $spacing--unit * 2;
 
             @include mq--large {
-                margin: 0 $spacing--unit 0 0;
+                margin: 0;
             }
 
             &:last-of-type {

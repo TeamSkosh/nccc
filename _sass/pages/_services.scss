@@ -141,32 +141,4 @@
             }
         }
     }
-
-    &--file {
-        border: 1px solid $color--secondary;
-        border-radius: $border--radius;
-        color: $color--secondary;
-        font-size: ms(2);
-        font-weight: 500;
-        padding: $spacing--unit / 2;
-
-        &__wrapper {
-            display: flex;
-            justify-content: center;
-            margin: $spacing--unit / 2 0 0;
-
-            @include mq--medium {
-                justify-content: flex-start;
-            }
-        }
-
-        &:hover {
-            border-color: $color--secondary__interact;
-            color: $color--secondary__interact;
-
-            .fa {
-                color: $color--secondary__interact;
-            }
-        }
-    }
 }

@@ -122,6 +122,7 @@
         color: $color--gray;
         font-size: ms(2);
         margin-bottom: $spacing--unit * 2;
+        padding: ($spacing--unit * 2) $padding--content;
     }
 
     &--statement-of-faith-lead-in {

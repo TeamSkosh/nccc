@@ -33,11 +33,15 @@
             background: $color--white__off;
 
             &:first-of-type {
-                border-radius: 0 0 0 $border--radius;
+                @include mq--medium {
+                    border-radius: 0 0 0 $border--radius;
+                }
             }
 
             &:last-of-type {
-                border-radius: 0 0 $border--radius 0;
+                @include mq--medium {
+                    border-radius: 0 0 $border--radius 0;
+                }
             }
 
             a {
@@ -49,11 +53,15 @@
             background: $color--white__off;
 
             &:first-of-type {
-                border-radius: 0 0 0 $border--radius;
+                @include mq--medium {
+                    border-radius: 0 0 0 $border--radius;
+                }
             }
 
             &:last-of-type {
-                border-radius: 0 0 $border--radius 0;
+                @include mq--medium {
+                    border-radius: 0 0 $border--radius 0;
+                }
             }
         }
 
