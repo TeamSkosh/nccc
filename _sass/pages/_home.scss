@@ -47,6 +47,10 @@ $home--call-to-action-width: 150px;
         position: relative;
         width: $home--call-to-action-width;
 
+        &:hover {
+            background: $color--primary;
+        }
+
         img {
             display: block;
             padding: $spacing--unit / 2;

@@ -44,6 +44,10 @@ $donate--call-to-action-width: 150px;
             margin-top: $spacing--unit / 2;
         }
 
+        &:hover {
+            background: $color--quaternary;
+        }
+
         img {
             display: block;
             padding: $spacing--unit / 2;
