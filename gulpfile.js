@@ -10,17 +10,19 @@ const scss = require('gulp-sass');
 
 const paths = {
     'dist': {
-        'css': 'css',
-        'img': 'img',
-        'fonts': 'fonts'
+        'css': './css',
+        'img': './img',
+        'fonts': './fonts'
     },
-    'siteRoot': '_site',
+    'siteRoot': './_site',
     'src': {
-        'css': 'css',
-        'img': '_img/**/*',
-        'fa_styles': 'node_modules/font-awesome/css/font-awesome.min.css',
-        'fa_fonts': 'node_modules/font-awesome/fonts/*',
-        'scss': '_sass/**/*.scss'
+        'css': './css',
+        'img': './_img/**/*',
+        'fa_styles': './node_modules/font-awesome/css/font-awesome.min.css',
+        'fa_fonts': './node_modules/font-awesome/fonts/*',
+        'scss_main': './css/main.scss',
+        'scss_root': './_sass',
+        'scss': './_sass/**/*.scss'
     }
 };
 
@@ -66,10 +68,11 @@ gulp.task('jekyll', () => {
 });
 
 gulp.task('scss', () => {
-    gulp.src(paths.src.scss)
+    gulp.src(paths.src.scss_main)
         .pipe(maps.init())
         .pipe(scss({
-            outputStyle: 'expanded'
+            includePaths: [paths.src.scss_root],
+            outputStyle: 'compressed'
         })
         .on('error', scss.logError))
         .pipe(concat('main.min.css'))
