@@ -2,7 +2,7 @@
     {% assign sorted_pages = site.pages | sort: 'nav_order' %}
     {% assign url = page.url|remove:'index.html' %}
     {% for my_page in sorted_pages %}
-        {% if my_page.title %}
+        {% if my_page.title and my_page.exclude_from_nav != true %}
             <li class="site-nav--item {% if url == my_page.url %}active{% endif %}">
                 <a href="{{ my_page.url | prepend: site.baseurl }}">
                     {{ my_page.title }}

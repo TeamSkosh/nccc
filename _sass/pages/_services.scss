@@ -97,48 +97,14 @@
         text-align: center;
     }
 
-    &--overview-point-heading {
-        color: $color--secondary;
-        font-weight: 600;
-        margin-top: $spacing--unit;
-    }
-
-    &--overview-point-subheading {
-        font-size: ms(2);
-        font-weight: 600;;
-        margin: ($spacing--unit / 2) 0;
-    }
-
     &--overview-point-description {
         font-size: ms(2);
         margin-bottom: 0;
         margin-top: $spacing--unit / 2;
-        text-align: center;
 
         @include mq--medium {
             margin-top: 0;
             text-align: left;
-        }
-    }
-
-    &--overview-point-ul {
-        color: $color--gray__light;
-        font-size: ms(2);
-    }
-
-    &--overview-point-dl {
-        font-size: ms(2);
-        margin-bottom: 0;
-
-        dd {
-            border-left: 2px solid $color--gray__lighter;
-            color: $color--gray__light;
-            margin-bottom: $spacing--unit / 2;
-            padding-left: $spacing--unit / 2;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
         }
     }
 }
