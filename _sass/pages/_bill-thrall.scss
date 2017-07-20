@@ -7,6 +7,16 @@
 $bill-thrall--call-to-action-width: 75px;
 
 .bill-thrall {
+    &--banner-wrapper {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        @include mq--medium {
+            flex-direction: row;
+        }
+    }
+
     &--banner {
         align-items: center;
         background: $color--gray--lightest;
@@ -23,7 +33,7 @@ $bill-thrall--call-to-action-width: 75px;
 
     &--banner-title {
         font-size: ms(3);
-        font-weight: 100;
+        font-weight: 400;
         line-height: 1.15;
         margin-bottom: $spacing--unit;
 
@@ -204,6 +214,20 @@ $bill-thrall--call-to-action-width: 75px;
         img {
             border-radius: 50%;
             max-width: 100px;
+        }
+    }
+
+    &--form {
+        padding: ($spacing--unit * 2) $padding--content;
+    }
+
+    &--form-embed {
+        align-items: center;
+        display: flex;
+
+        iframe {
+            overflow-y: hidden;
+            width: 100%;
         }
     }
 }
