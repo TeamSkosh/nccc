@@ -65,7 +65,7 @@ $donate--call-to-action-width: 150px;
             color: $color--primary;
             display: flex;
             flex-direction: row;
-            flex-grow: 1;
+            flex: 1 0 auto;
             justify-content: center;
             white-space: nowrap;
 
@@ -115,6 +115,11 @@ $donate--call-to-action-width: 150px;
         font-weight: 500;
         padding: $spacing--unit / 2;
 
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+
         &__wrapper {
             margin: 0 0 $spacing--unit * 2;
 
@@ -128,6 +133,14 @@ $donate--call-to-action-width: 150px;
                 @include mq--medium {
                     margin-right: 0;
                 }
+            }
+        }
+
+        &__wrapper-vertical {
+            margin: 0 0 $spacing--unit * 2;
+
+            &:last-of-type {
+                margin-bottom: 0;
             }
         }
 
