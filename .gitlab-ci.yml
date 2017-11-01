@@ -1,5 +1,7 @@
 pages:
   script:
-  - npm install
   - bundle install
-  - gulp
+  - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+    - public
