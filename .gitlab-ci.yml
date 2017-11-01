@@ -8,6 +8,7 @@ before_script:
   - bundle install --path vendor
 
 pages:
+  stage: deploy
   script:
   - bundle exec jekyll build -d public
   artifacts:
