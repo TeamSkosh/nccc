@@ -1,0 +1,5 @@
+pages:
+  script:
+  - npm install
+  - bundle install
+  - gulp
