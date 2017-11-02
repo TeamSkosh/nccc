@@ -23,6 +23,7 @@ markdown: kramdown
 
 # Excludes
 exclude:
+  - vendor
   - package.json
   - node_modules
   - gulpfile.js
