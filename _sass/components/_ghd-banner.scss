@@ -1,0 +1,95 @@
+/*------------------------------------------------------------------------------
+    _ghd-banner.scss
+
+    Giving Hearts Day Banner styles
+------------------------------------------------------------------------------*/
+
+.ghd {
+    &--banner-wrapper {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        @include mq--medium {
+            flex-direction: row;
+        }
+    }
+
+    &--banner {
+        align-items: center;
+        background: $color--gray--lightest;
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        padding: $spacing--unit;
+        text-align: center;
+
+        @include mq--medium {
+            flex-direction: row;
+        }
+    }
+
+    &--banner-title {
+        font-size: ms(3);
+        font-weight: 400;
+        line-height: 1.15;
+        margin-bottom: $spacing--unit;
+
+        @include mq--medium {
+            margin: 0 $spacing--unit 0 0;
+        }
+    }
+
+    &--banner-call-to-action {
+        border: 1px solid $color--secondary;
+        border-radius: $border--radius;
+        color: $color--secondary;
+        flex-shrink: 0;
+        margin-top: $spacing--unit;
+        padding: $spacing--unit / 2;
+
+        @include mq--medium {
+            margin: 0 $spacing--unit;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            border-color: $color--secondary__interact;
+            color: $color--secondary__interact;
+
+            .fa {
+                color: $color--secondary__interact;
+            }
+        }
+    }
+
+    &--image {
+        max-width: 300px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &--image__small {
+        border: 1px solid $color--primary;
+        border-radius: 50%;
+        display: none;
+        margin: $spacing--unit 0;
+        padding: $spacing--unit / 2;
+
+        @include mq--medium {
+            display: block;
+            margin: 0;
+        }
+
+        img {
+            border-radius: 50%;
+            max-width: 100px;
+        }
+    }
+}
