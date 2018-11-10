@@ -1,0 +1,29 @@
+/*------------------------------------------------------------------------------
+    _locations.scss
+
+    Locations page styles
+------------------------------------------------------------------------------*/
+
+.locations {
+    &--summary {
+        background: $color--secondary;
+        color: $color--white;
+        padding: ($spacing--unit * 2) $padding--content;
+    }
+
+    &--location-title {
+        font-size: ms(4);
+        font-weight: 100;
+        line-height: 1.15;
+        margin: $spacing--unit 0;
+        text-align: center;
+
+        @include mq--medium {
+            font-size: ms(5);
+        }
+    }
+
+    &--location-address {
+        text-align: center;
+    }
+}
